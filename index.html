@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <a href="https://www.flaticon.com/free-icons/more" title="more icons">More icons created by Royyan Wijaya - Flaticon</a> -->
+    <!-- <a href="https://www.flaticon.com/free-icons/correct" title="correct icons">Correct icons created by Freepik - Flaticon</a> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>TO-DO LIST</h1>
+    </header>
+    <main>
+        <div id="div-main">
+            <div id="div-form">
+                <input type="text" name="to-do" id="to-do" placeholder="To-do">
+                <input type="button" value="ADICIONAR" onclick="add()" id="add" name="Adicionar" placeholder="ADICIONAR">
+            </div>
+
+            <div id="div-container">
+
+                <div class="item">
+                    <div class="div-input" id="checkbox1">
+                        <div class="div-checkbox" onclick="check()"></div>    
+                    </div>
+                    <div class="div-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="div-info">
+                        <img class="option" src="./Images/option.png" width="20px">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="div-input">
+                        <div class="div-checkbox"></div>     
+                    </div>
+                    <div class="div-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elitMaxime laboriosam consequatur 
+                    </div>
+                    <div class="div-info">
+                        <img class="option" src="./Images/option.png" width="20px">
+                    </div>
+                </div>
+                <div class="item" id="">
+                    <div class="div-input">
+                        <div class="div-checkbox"></div>     
+                    </div>
+                    <div class="div-content">
+                        Lorem ipsum dolor 
+                    </div>
+                    <div class="div-info">
+                        <img class="option" src="./Images/option.png" width="20px">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
