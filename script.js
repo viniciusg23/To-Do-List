@@ -1,4 +1,6 @@
 let loadPage = function(){
+    let text = document.getElementById("to-do");
+    text.value = '';
     let db = JSON.parse(localStorage.getItem("db_todo") || "[]");
     let container = document.getElementById("div-container");
     container.innerHTML = "";
