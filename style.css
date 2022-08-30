@@ -137,8 +137,28 @@ main{
 	border-style: solid;
 	border-color: rgb(196, 18, 18);
 }
-
-
+#div-edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+#text-edit{
+    width: 100%;
+    height: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.edit-button{
+    background-color: #607EAA;
+    width: 80%;
+    border-width: 1px;
+	border-style: solid;
+	border-color: #1C3879;
+    color: white;
+    cursor: pointer;
+}
 
 
 footer{
