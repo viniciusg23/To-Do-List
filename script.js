@@ -16,7 +16,7 @@ let loadPage = function(){
                         ${item.content}
                     </div>
                     <div class="div-info">
-                        <img class="option" onclick="openMenu(${item.id})" src="./Images/option.png" width="20px" id="info-${item.id}">
+                        <img class="option" onclick="openMenu('${item.id}')" src="./Images/option.png" width="20px" id="info-${item.id}">
                     </div>
                 </div>
                 `
@@ -31,7 +31,7 @@ let loadPage = function(){
                         ${item.content}
                     </div>
                     <div class="div-info">
-                        <img class="option" onclick="openMenu(${item.id})" src="./Images/option.png" width="20px" id="info-${item.id}">
+                        <img class="option" onclick="openMenu('${item.id}')" src="./Images/option.png" width="20px" id="info-${item.id}">
                     </div>
                 </div>
                 `
@@ -80,8 +80,8 @@ let openMenu = function(item){
     setTimeout(()=>{
         container.setAttribute("onclick", "cancel()");
     }, 200);
-    edit3.setAttribute("onclick", `edit(${item})`);
-    delet.setAttribute("onclick", `delet3(${item})`);
+    edit3.setAttribute("onclick", `edit('${item}')`);
+    delet.setAttribute("onclick", `delet3('${item}')`);
 }
 
 let cancel = function(){
@@ -99,11 +99,18 @@ let cancel = function(){
 let edit = function(){
 
 }
-let delet3 = function(){
+let delet3 = function(item){
     let db = JSON.parse(localStorage.getItem("db_todo"));
 
-    db.forEach(item =>{})
+    let removeItem = function(array, prop, value){
+        return array.filter(function(i){return i[prop] !== value})
+    }
 
+    db = removeItem(db, "id", item);
+    localStorage.setItem("db_todo", JSON.stringify(db));
+
+    cancel();
+    loadPage();
 }
 
 let check = function(aux){
