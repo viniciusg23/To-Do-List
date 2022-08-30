@@ -27,7 +27,7 @@ main{
     background-color: white;
     margin-top: 4em;
     padding: 1em;
-    width: 50%;
+    width: 80%;
     max-width: 38em;
     box-shadow: 0 0 1em rgba(201, 201, 201, 0.433);
 }
@@ -164,4 +164,30 @@ footer{
     bottom: 0px;
     width: 100%;
     background-color: #1C3879;
+}
+
+@media screen and (max-width: 560px) {
+    html{
+        min-width: 350px;
+    }
+    #div-main{
+        background-color: white;
+        margin-top: 0em;
+        padding: 2em;
+        width: 100%;
+        box-shadow: 0 0 1em rgba(201, 201, 201, 0);
+    }
+    #div-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5em;
+        margin-bottom: 2em;
+    }
+    #to-do{
+        width: 100%;
+    }
+    #add{
+        width: 100%;
+    }
 }
