@@ -13,24 +13,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>TO-DO LIST</h1>
-    </header>
-    <main>
-        <div id="div-main">
-            <div id="div-form">
-                <input type="text" name="todo" class="to-do" id="to-do" placeholder="To-do" maxlength="128" value="">
-                <div id="add" onclick="add()"><b>ADICIONAR</b></div>
-            </div>
+    <div id="container">
+        <header>
+            <h1>TO-DO LIST</h1>
+        </header>
+        <main>
+            <div id="div-main">
+                <div id="div-form">
+                    <input type="text" name="todo" class="to-do" id="to-do" placeholder="To-do" maxlength="128" value="">
+                    <div id="add" onclick="add()"><b>ADICIONAR</b></div>
+                </div>
 
-            <div id="div-container">
+                <div id="div-container">
 
-                
+                    
+                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="foot">
                 
             </div>
+        </footer>
+    </div>
+    <div id="menu">
+        <p>O que você deseja fazer com essa Tarefa?</p>
+        <div id="div-buttons">
+            <div class="button cancel-edit" onclick="cancel()"><p>Cancelar</p></div>
+            <div class="button cancel-edit" id="edit"><p>Editar</p></div>
+            <div class="button" id="delete"><p>Excluir</p></div>
         </div>
-    </main>
-
+    </div>
 
 
 

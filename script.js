@@ -16,7 +16,7 @@ let loadPage = function(){
                         ${item.content}
                     </div>
                     <div class="div-info">
-                        <img class="option" src="./Images/option.png" width="20px" id="info-${item.id}">
+                        <img class="option" onclick="openMenu(${item.id})" src="./Images/option.png" width="20px" id="info-${item.id}">
                     </div>
                 </div>
                 `
@@ -31,7 +31,7 @@ let loadPage = function(){
                         ${item.content}
                     </div>
                     <div class="div-info">
-                        <img class="option" src="./Images/option.png" width="20px" id="info-${item.id}">
+                        <img class="option" onclick="openMenu(${item.id})" src="./Images/option.png" width="20px" id="info-${item.id}">
                     </div>
                 </div>
                 `
@@ -68,6 +68,42 @@ let add = function(){
         text.focus();
     }
     
+}
+let openMenu = function(item){
+    let menu = document.getElementById("menu");
+    let container = document.getElementById("container");
+    let edit3 = document.getElementById("edit");
+    let delet = document.getElementById("delete");
+    
+    menu.setAttribute("style", "display: block;")
+    container.setAttribute("style", "filter:blur(3px);");
+    setTimeout(()=>{
+        container.setAttribute("onclick", "cancel()");
+    }, 200);
+    edit3.setAttribute("onclick", `edit(${item})`);
+    delet.setAttribute("onclick", `delet3(${item})`);
+}
+
+let cancel = function(){
+    let menu = document.getElementById("menu");
+    let container = document.getElementById("container");
+    let edit3 = document.getElementById("edit");
+    let delet = document.getElementById("delete");
+
+    menu.setAttribute("style", "display: none;")
+    container.setAttribute("style", "filter:blur(0px);")
+    container.removeAttribute("onclick");
+    edit3.removeAttribute("onclick");
+    delet.removeAttribute("onclick");
+}
+let edit = function(){
+
+}
+let delet3 = function(){
+    let db = JSON.parse(localStorage.getItem("db_todo"));
+
+    db.forEach(item =>{})
+
 }
 
 let check = function(aux){
