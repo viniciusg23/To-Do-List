@@ -19,8 +19,10 @@
 <p>Neste gif você pode ver as funcionalidades disponíveis que é a edição e exclusão da tarefa em foco.</p>
 <hr>
 <h3>Tecnologias</h3>
-*HTML
-*CSS
-*JavaScript
+<ul>
+ <li>HTML</li>
+ <li>CSS</li>
+ <li>JavaScript</li>
+</ul>
 <br>
-<p><b>Sinta-se a vontade para testar! :)</b>Clique aqui para ir ao <a href="https://www.linkedin.com/in/vin%C3%ADcius-gonzaga-guilherme-9a65a722a/">Meu LinkedIn</a></p>
+<p><b>Sinta-se a vontade para testar! :)</b> Clique aqui para ir ao <a href="https://www.linkedin.com/in/vin%C3%ADcius-gonzaga-guilherme-9a65a722a/">Meu LinkedIn</a></p>
