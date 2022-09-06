@@ -1,6 +1,7 @@
 # To-do_List
  
 <p>Lista de Tarefas com dados persistentes utilizando localStorage HTML | CSS | JavaScript</p>
+<p>Para acessar o projeto <a href="https://viniciusg23.github.io/To-do_List/src" target="_blank">Clique Aqui</a></p>
 
 <p>Este projeto se trata de uma lista de tarefas com dados persistentes, onde você poderá adicionar, editar, excluir e marcar como feito seus afazeres sem perder seus dados ao fechar o navegador. Para a persistência de dados foi utilizado o localStorage do próprio navegador, permitindo que você fecha a aba ou o navegador, e mesmo assim suas tarefas continuarão salvas quando você voltar (Exceto se o localStorage seja limpo por meios externos). Sinta-se a vontade para Testar o projeto!! :)</p>
 
