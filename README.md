@@ -9,23 +9,18 @@
 <h2>Exibição Do Projeto</h2>
 <img src="./Images/gifs/exibicaoTo-do.gif">
 <p>Neste gif você pode ver o objetivo principal deste projeto.</p>
-<br>
 <hr>
-<br>
 <h2>Persistência de Dados</h2>
 <img src="./Images/gifs/persistenciaDados.gif">
 <p>Neste gif você pode ver o diferencial deste projeto, que é a persistência de Dados, que permite que a aba ou navegador seja fechado, e quando for reaberto estará da mesma forma. O localStorage seria uma abstração de um Banco de Dados</p>
-<br>
 <hr>
-<br>
 <h2>Funcionalidades</h2>
 <img src="./Images/gifs/funcoes.gif">
 <p>Neste gif você pode ver as funcionalidades disponíveis que é a edição e exclusão da tarefa em foco.</p>
-<br>
 <hr>
 <h3>Tecnologias</h3>
 *HTML
 *CSS
 *JavaScript
-
+<br>
 <p><b>Sinta-se a vontade para testar! :)</b>Clique aqui para ir ao <a href="https://www.linkedin.com/in/vin%C3%ADcius-gonzaga-guilherme-9a65a722a/">Meu LinkedIn</a></p>
