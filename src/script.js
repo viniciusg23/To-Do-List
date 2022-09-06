@@ -10,13 +10,13 @@ let loadPage = function(){
             container.innerHTML += `
                 <div class="item">
                     <div class="div-input" id="${item.id}">
-                        <div class="div-checkbox" style="background-color: #607EAA;" onclick="uncheck('${item.id}')"><img src="./Images/checkicon.png" width="20px"></div>    
+                        <div class="div-checkbox" style="background-color: #607EAA;" onclick="uncheck('${item.id}')"><img src="../Images/checkicon.png" width="20px"></div>    
                     </div>
                     <div class="div-content" style="text-decoration: line-through;">
                         ${item.content}
                     </div>
                     <div class="div-info">
-                        <img class="option" onclick="openMenu('${item.id}')" src="./Images/option.png" width="20px" id="info-${item.id}">
+                        <img class="option" onclick="openMenu('${item.id}')" src="../Images/option.png" width="20px" id="info-${item.id}">
                     </div>
                 </div>
                 `
@@ -31,7 +31,7 @@ let loadPage = function(){
                         ${item.content}
                     </div>
                     <div class="div-info">
-                        <img class="option" onclick="openMenu('${item.id}')" src="./Images/option.png" width="20px" id="info-${item.id}">
+                        <img class="option" onclick="openMenu('${item.id}')" src="../Images/option.png" width="20px" id="info-${item.id}">
                     </div>
                 </div>
                 `
@@ -171,9 +171,6 @@ let check = function(aux){
             data.check = true;
     })
     localStorage.setItem("db_todo", JSON.stringify(db));
-
-    // let item = document.getElementById(aux);
-    // item.innerHTML = `<div class="div-checkbox" style="background-color: #607EAA;" onclick="uncheck('${aux}')"><img src="./Images/checkicon.png" width="20px"></div>`
     
     loadPage();
 }
@@ -186,7 +183,5 @@ let uncheck = function(aux){
     })
     localStorage.setItem("db_todo", JSON.stringify(db));
 
-    // let item = document.getElementById(aux);
-    // item.innerHTML = `<div class="div-checkbox" onclick="check('${aux}')"></div> `
     loadPage();
 }
