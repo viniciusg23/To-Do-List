@@ -1,4 +1,4 @@
-# To-do_List
+# To-do List
  
 <p>Lista de Tarefas com dados persistentes utilizando localStorage HTML | CSS | JavaScript</p>
 <p>Para acessar o projeto <a href="https://viniciusg23.github.io/To-do_List/src" target="_blank">Clique Aqui</a></p>
